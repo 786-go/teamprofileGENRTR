@@ -22,8 +22,8 @@ const promptUser = () => {
 
 promptUser()
     .then(response => {
-        const READme = generatePage(response);
-        fs.writeFile('index.html', READme, err => {
+        const indexPg = generatePage(response);
+        fs.writeFile('TeamProfile.html', indexPg, err => {
             if (err) throw new Error(err);
             console.log('Page created!');
         });
